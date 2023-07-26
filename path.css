@@ -144,7 +144,7 @@ body {
 }
 
 #navbarLinks.active {
-    display: block;
+    display: grid;
 }
 
 
