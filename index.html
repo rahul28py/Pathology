@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidan Pathology</title>
+    <link rel="icon" href="images/NP.png" type="image/x-icon">
+    <link rel="stylesheet" href="path.css">
+    <script src="npath.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#initial">
+                <img src="images/NP.png" class="logo" alt="Nidan Pathology Logo" width="150" height="30">
+            </a>
+            <div class="navbar-desktop">
+                <div class="navbar-links">
+                    <a class="navbar-link" href="#about">Home</a>
+                    <a class="navbar-link" href="#services">Services</a>
+                    <a class="navbar-link" href="#" onclick="openAppointmentForm()">Appointment</a>
+                    <a class="navbar-link" href="#about-us">About Us</a>
+                    <a class="navbar-link" href="#contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="navbar-mobile">
+                <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+                <div class="navbar-links" id="navbarLinks">
+                    <a class="navbar-link" href="#about">Home</a>
+                    <a class="navbar-link" href="#services">Services</a>
+                    <a class="navbar-link" href="#" onclick="openAppointmentForm()">Appointment</a>
+                    <a class="navbar-link" href="#about-us">About Us</a>
+                    <a class="navbar-link" href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="owl-carousel-container" id="initial">
+        <div class="owl-carousel">
+            <div class="item">
+                <img src="images/OVER 500+ BLOOD TESTS AVAILABLE.png" alt="Image 1">
+            </div>
+            <div class="item">
+                <img src="images/fast report.png" alt="Image 2">
+            </div>
+
+            <div class="item">
+                <img src="images/experience.png" alt="Image 3">
+            </div>
+            <div class="item">
+                <img src="images/collection.png" alt="Image 3">
+            </div>
+            <div class="item">
+                <img src="images/results.png" alt="Image 3">
+            </div>
+            <div class="item">
+                <img src="images/timely.png" alt="Image 3">
+            </div>
+            <div class="item">
+                <img src="images/educated.png" alt="Image 3">
+            </div>
+            <div class="item">
+                <img src="images/_Exceptional Customer Services.png" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container-home">
+        <section id="home" class="home-section">
+            <div class="h-container">
+                <div class="text-container">
+                    <h1 class="home-title">Welcome to Nidan Pathology</h1>
+                    <p class="home-description">" Your Wellness , Our Priority "</p>
+                    <div class="home-features">
+                        <p><i class="fas fa-check-circle"></i> Over 500+ Blood Tests</p>
+                        <p><i class="fas fa-check-circle"></i> Accurate Results</p>
+                        <p><i class="fas fa-check-circle"></i> Fast Report Delivery</p>
+                        <p><i class="fas fa-check-circle"></i> No Delay in Reports</p>
+                        <p><i class="fas fa-check-circle"></i> 5+ Years of Establishment</p>
+                        <p><i class="fas fa-check-circle"></i> Educated and Skilled Employees</p>
+                        <p><i class="fas fa-check-circle"></i> Home Sample Collection</p>
+                        <p><i class="fas fa-check-circle"></i> Exceptional Customer Services</p>
+                    </div>
+                    <a href="https://forms.gle/RLDNE968QVNp23GUA" class="btn btn-book-appointment">Book an Appointment</a>
+                </div>
+        </section> -->
+
+    <section class="about" id="about">
+        <div class="container-para">
+            <div class="p-container">
+                <div class="image-container">
+                    <img src="images/NP.png" alt="Image Description">
+                </div>
+                <div class="p-text-container">
+                    <p class="beautiful-text">Welcome to Nidan Pathology, your trusted partner in precise diagnostics. With over 5+ years of establishment in Sultanpur, we take pride in offering a comprehensive range of pathology services with a personalized touch. <br> Our state-of-the-art
+                        laboratory provides 500+ blood tests, ensuring that you have access to a wide array of health insights. We are committed to accuracy, delivering reliable and dependable results, empowering you to make informed decisions about your
+                        well-being.
+                        <br> At Nidan Pathology, we prioritize efficiency, providing fast results without any delays. Our dedicated team of educated and skilled employees ensures that your tests are processed with utmost care and professionalism.
+                        <br> We understand the importance of convenience, and thus, we go the extra mile to make the process easier for you. Our home sample collection service allows you to get tested from the comfort of your own home, saving you time
+                        and effort. <br> We believe that excellent service is the cornerstone of a memorable healthcare experience. Our mission is to provide you with top-notch services, so you feel valued and cared for throughout your diagnostic journey.
+                        <br> Embrace the future of diagnostics with Nidan Pathology - where precision meets compassion. Let us be your partner in taking control of your health. Welcome to a new era of diagnostics, where quality, accuracy, and care are
+                        paramount. <br> Experience the Nidan difference - Explore our services and book an appointment today!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-description">At Nidan Pathology, we offer a comprehensive range of pathology services using state-of-the-art technology and expert diagnostics. Our services include:</p>
+            <ul class="service-list">
+                <li>
+                    <i class="fas fa-flask"></i>
+                    <h3>Advanced Blood Tests</h3>
+                    <p>Accurate and detailed blood tests for early diagnosis and monitoring.</p>
+                </li>
+                <li>
+                    <i class="fas fa-microscope"></i>
+                    <h3>Bio chemistry</h3>
+                    <p>Cutting-edge Biochemistry tests for precise health insights and diagnostics</p>
+                </li>
+                <li>
+                    <i class="fas fa-dna"></i>
+                    <h3>Molecular Diagnostics</h3>
+                    <p>Advanced molecular tests for genetic and infectious disease analysis.</p>
+                </li>
+                <li>
+                    <i class="fas fa-flask"></i>
+                    <h3>Heamatology</h3>
+                    <p>Comprehensive blood analysis for accurate diagnoses and treatment..</p>
+                </li>
+                <li>
+                    <i class="fas fa-vial"></i>
+                    <h3>Serology</h3>
+                    <p>Accurate serological tests for detecting antibodies and infectious diseases.</p>
+                </li>
+            </ul>
+            <a href="https://forms.gle/RLDNE968QVNp23GUA" class="btn" target="_blank">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="npl1.jpg" alt="Image 1" class="gallery-image" data-lightbox="gallery">
+            <img src="npl2.jpg" alt="Image 2" class="gallery-image" data-lightbox="gallery">
+            <img src="npl3.jpg" alt="Image 3" class="gallery-image" data-lightbox="gallery">
+            <img src="npl4.jpg" alt="Image 4" class="gallery-image" data-lightbox="gallery">
+        </div>
+    </section> -->
+
+
+    <div>
+        <section class="about-us" id="about-us">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="about-section-title">About Us</h2>
+                    <p>At Nidan Pathology, our journey began with the passion and dedication of our founder, Shubham Srivastava. With a deep-rooted love for healthcare and an unyielding commitment to excellence, he pursued his education from prestigious
+                        institutions, honing his skills in the field of pathology for over 5+ years. Driven by a vision to revolutionize healthcare, we strive to make every step of your diagnostic journey hassle-free and convenient. Our mission is to
+                        provide you with not just accurate results, but also an experience that speaks of care, compassion, and understanding. <br> In every test we conduct, we pour our heart and soul to deliver solutions that can impact lives positively.
+                        Your well-being is at the core of what we do, and we leave no stone unturned to ensure that you receive the best possible care. With cutting-edge technology and a team of educated and skilled professionals, we bring you precise
+                        diagnostics, empowering you to take control of your health. But beyond the science, it is the warmth in our service that sets us apart, making your experience with us truly exceptional. <br> At Nidan Pathology, we believe that
+                        behind every report lies a unique story, a life, and a loved one. With every test, we embrace your emotions, your fears, and your hopes, vowing to be your unwavering support on this journey towards wellness. Your trust in us fuels
+                        our passion to innovate, to improve, and to exceed expectations. We are here for you, driven by a relentless pursuit of excellence, because your health is not just our priority – it is our purpose. Together, let's embrace a future
+                        where healthcare is not just a service but an emotionful connection. Welcome to Nidan Pathology, where precision meets compassion, and where we stand by you, every step of the way.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Your image here -->
+                    <img src="images/Shubham_img.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-section-title">Contact Us</h2>
+            <div class="contact-content">
+                <p>Ready to take control of your health? Schedule an appointment or reach out to our team for any inquiries:</p>
+                <a href="https://forms.gle/RLDNE968QVNp23GUA" class="btnM btn-book-appointment">Book an Appointment</a>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone-alt"></i> Phone: +91 - 9161717036</p>
+                    <p><i class="fas fa-envelope"></i> Email: nidanpathology29@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 696/1 , Near Kaushal Electronics , Dariyapur Road , Sultanpur - 228001</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 2,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000, // Change slide duration (in milliseconds)
+                autoplayHoverPause: true,
+                nav: false, //Show navigation arrows
+                dots: true // Hide navigation dots
+            });
+        });
+
+
+        $(document).ready(function() {
+            $('.navbar-link').on('click', function(event) {
+                event.preventDefault();
+                var target = $(this).attr('href');
+                var navbarHeight = $('.navbar').outerHeight(); // Get the height of the fixed navbar
+                var targetOffset = $(target).offset().top - navbarHeight; // Adjust the target offset
+
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 800); // You can adjust the scrolling speed here (in milliseconds)
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
